@@ -62,27 +62,4 @@ public class JDBCUtil {
         }
         return result;
     }
-
-    /**
-     * 修改数据库操作（增、删、改）
-     * @param sql
-     * @return 修改是否成功(0:失败, 1:成功)
-     */
-    public static Object  updateDatas(String sql){
-        Connection conn = getConnect();
-        QueryRunner queryRunner = new QueryRunner();
-        Object result = null;
-        Object determine = 1;
-        try {
-            result = queryRunner.update(conn,sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        if (result == determine ){
-            System.out.println("sql执行成功");
-        }else {
-            System.out.println("sql执行失败");
-        }
-        return result;
-    }
 }
