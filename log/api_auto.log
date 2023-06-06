@@ -1,0 +1,33 @@
+2023-05-03 18:10:01 INFO  BaseTest:49 - -----------------请求数据---------------------
+2023-05-03 18:10:01 INFO  BaseTest:50 - 请求方法:PUT
+2023-05-03 18:10:01 INFO  BaseTest:51 - 请求地址:http://mall.lemonban.com:8107/user/sendRegisterSms
+2023-05-03 18:10:01 INFO  BaseTest:52 - 请求头:{"Content-Type":"application/json; charset=UTF-8"}
+2023-05-03 18:10:01 INFO  BaseTest:53 - 请求参数:{"mobile":"15574670070"}
+2023-05-03 18:10:04 INFO  BaseTest:109 - -----------------响应数据---------------------
+2023-05-03 18:10:04 INFO  BaseTest:110 - http状态码：400
+2023-05-03 18:10:04 INFO  BaseTest:111 - 响应时间：1080ms
+2023-05-03 18:10:04 INFO  BaseTest:112 - 响应头：[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=text/plain;charset=UTF-8, Content-Length=66, Date=Wed, 03 May 2023 10:10:04 GMT, Connection=close]
+2023-05-03 18:10:04 INFO  BaseTest:113 - 响应体：The mobile phone number has been registered, unable to re register
+2023-05-03 18:10:04 ERROR BaseTest:288 - 断言【http状态码】失败，期望值：200, 实际值：400
+2023-05-03 18:10:04 INFO  BaseTest:49 - -----------------请求数据---------------------
+2023-05-03 18:10:04 INFO  BaseTest:50 - 请求方法:PUT
+2023-05-03 18:10:04 INFO  BaseTest:51 - 请求地址:http://mall.lemonban.com:8107/user/checkRegisterSms
+2023-05-03 18:10:04 INFO  BaseTest:52 - 请求头:{"Content-Type":"application/json; charset=UTF-8"}
+2023-05-03 18:10:04 INFO  BaseTest:53 - 请求参数:{"mobile":"15574670070","validCode":"490234"}
+2023-05-03 18:10:04 INFO  BaseTest:109 - -----------------响应数据---------------------
+2023-05-03 18:10:04 INFO  BaseTest:110 - http状态码：400
+2023-05-03 18:10:04 INFO  BaseTest:111 - 响应时间：136ms
+2023-05-03 18:10:04 INFO  BaseTest:112 - 响应头：[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=text/plain;charset=UTF-8, Content-Length=41, Date=Wed, 03 May 2023 10:10:04 GMT, Connection=close]
+2023-05-03 18:10:04 INFO  BaseTest:113 - 响应体：The verification code is wrong or expired
+2023-05-03 18:10:04 ERROR BaseTest:288 - 断言【http状态码】失败，期望值：200, 实际值：400
+2023-05-03 18:10:04 INFO  BaseTest:49 - -----------------请求数据---------------------
+2023-05-03 18:10:04 INFO  BaseTest:50 - 请求方法:PUT
+2023-05-03 18:10:04 INFO  BaseTest:51 - 请求地址:http://mall.lemonban.com:8107/user/registerOrBindUser
+2023-05-03 18:10:04 INFO  BaseTest:52 - 请求头:{"Content-Type":"application/json; charset=UTF-8"}
+2023-05-03 18:10:04 INFO  BaseTest:53 - 请求参数:{"appType":3,"checkRegisterSmsFlag":"The verification code is wrong or expired","mobile":"15574670070","userName":"hmstest","password":"lemon123456","registerOrBind":1,"validateType":1}
+2023-05-03 18:10:05 INFO  BaseTest:109 - -----------------响应数据---------------------
+2023-05-03 18:10:05 INFO  BaseTest:110 - http状态码：400
+2023-05-03 18:10:05 INFO  BaseTest:111 - 响应时间：93ms
+2023-05-03 18:10:05 INFO  BaseTest:112 - 响应头：[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=text/plain;charset=UTF-8, Content-Length=87, Date=Wed, 03 May 2023 10:10:05 GMT, Connection=close]
+2023-05-03 18:10:05 INFO  BaseTest:113 - 响应体：The verification code has expired. Please resend the verification code for verification
+2023-05-03 18:10:05 ERROR BaseTest:288 - 断言【http状态码】失败，期望值：200, 实际值：400
